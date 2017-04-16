@@ -8,23 +8,15 @@ from abc import ABCMeta, abstractmethod, abstractproperty
 @six.add_metaclass(ABCMeta)
 class AbstractWorld:
     @abstractmethod
-    def step(self):
-        pass
-
-    @abstractmethod
-    def __repr__(self):
-        pass
-
-    @abstractmethod
-    def __str__(self):
-        pass
-
-    @abstractmethod
-    def __eq__(self):
+    def step(self, *args):
         pass
 
     @abstractproperty
     def state(self):
+        pass
+
+    @abstractproperty
+    def reset(self):
         pass
 
     @abstractproperty
@@ -34,3 +26,12 @@ class AbstractWorld:
     @abstractproperty
     def max_agents(self):
         pass
+
+    @abstractproperty
+    def num_agents(self):
+        pass
+    
+
+@six.add_metaclass(ABCMeta)
+class AbstractAgent:
+    pass
