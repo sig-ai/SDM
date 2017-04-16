@@ -14,3 +14,11 @@ class AbstractWorld:
     @abstractproperty
     def state(self):
         pass
+
+    @abstractproperty
+    def min_agents(self):
+        pass
+
+    @abstractproperty
+    def max_agents(self):
+        pass
