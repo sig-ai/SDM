@@ -4,8 +4,9 @@ from builtins import *
 import six
 from abc import ABCMeta, abstractmethod, abstractproperty
 
+
 @six.add_metaclass(ABCMeta)
-class World:
+class AbstractWorld:
     @abstractmethod
     def step(self):
         pass
