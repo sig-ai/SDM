@@ -90,3 +90,10 @@ ENV/
 
 # MAC OS X
 *.DS_Store
+
+### BreakOut
+sdm/breakout/bin/*
+sdm/breakout/main
+
+*.projectile
+*.clang_complete
